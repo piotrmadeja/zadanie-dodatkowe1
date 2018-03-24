@@ -1,0 +1,143 @@
+[class*="col-"] { float: left; min-height: 1px;}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.6%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.col-offset-0 { margin-left: 0; }
+.col-offset-1 { margin-left: 8.33%; }
+.col-offset-2 { margin-left: 16.66%; }
+.col-offset-3 { margin-left: 25%; }
+.col-offset-4 { margin-left: 33.33%; }
+.col-offset-5 { margin-left: 41.66%; }
+.col-offset-6 { margin-left: 50%; }
+.col-offset-7 { margin-left: 58.33%; }
+.col-offset-8 { margin-left: 66.66%; }
+.col-offset-9 { margin-left: 75%; }
+.col-offset-10 { margin-left: 83.33%; }
+.col-offset-11 { margin-left: 91.66%; }
+
+* { box-sizing: border-box; }
+
+$white: #ffff;
+$pink: #ed145b;
+$lato : 'Lato';
+
+body {
+  margin: 0;
+}
+
+.main {
+  height: 800px;
+  width: 100%;
+}
+
+.hero {
+  height: 100%;
+  width:100%;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+    .nav-buttons {
+      width: 70%;
+      color: $white;
+      font-size: 18px;
+      font-family: $lato;
+      letter-spacing: 0.4px;
+      display: flex;
+      justify-content: space-around;
+      ul {
+        li {
+          display: inline-block;
+          padding: 0 10px;
+          align-items: flex-end;
+          a {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+    }
+    .logo {
+      width: 30%;
+      padding: 10px 0;
+      color: $white;
+      font-size: 25px;
+      font-family: $lato;
+      letter-spacing: 1.15px;
+      display: flex;
+      justify-content: space-around;
+    }
+}
+
+.slogan {
+  height: calc(800px - 101px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 46px;
+    font-family: $lato;
+    font-weight: 300;
+    letter-spacing: 1.15px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 50px;
+  }
+  .line {
+    width: 200px;
+    height: 2px;
+    background-color: #ed145b;
+    position: relative;
+    bottom: 50px;
+  }
+  p {
+    padding-top: 20px;
+    color: $white;
+    font-size: 22px;
+    font-family: $lato;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+  }
+  button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid $pink;
+    background-color: $pink;
+    color: $white;
+    font-family: $lato;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+    margin-top: 66px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+

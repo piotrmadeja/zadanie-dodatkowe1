@@ -107,6 +107,7 @@ body {
   margin: 0;
 }
 
+/*Start of main section*/
 .main {
   height: 800px;
   width: 100%;
@@ -227,4 +228,90 @@ body {
 }
 
 /* End of main section */
+/*Start of PSD section*/
+.PSD {
+  width: 100%;
+  height: 700px;
+  margin: 0;
+}
+
+.PSD .pink-line {
+  height: 50px;
+  width: 100%;
+  background-image: url(../images/line.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 -38px;
+}
+
+.PSD .PSD-text {
+  height: 650px;
+  width: 60%;
+  float: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+  bottom: 10px;
+  left: 300px;
+}
+
+.PSD .PSD-text h1 {
+  font-size: 45px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.95px;
+  text-align: left;
+}
+
+.PSD .PSD-text .line {
+  width: 200px;
+  height: 2px;
+  background-color: #ed145b;
+  margin-bottom: 20px;
+}
+
+.PSD .PSD-text p {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.38px;
+}
+
+.PSD .PSD-text h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  color: #ed145b;
+  padding-top: 20px;
+}
+
+.PSD .PSD-text i {
+  font-size: 30px;
+}
+
+.PSD .PSD-text i:hover {
+  cursor: pointer;
+}
+
+.PSD .PSD-image {
+  height: 650px;
+  width: 40%;
+  float: left;
+  background-image: url(../images/macbook.jpg);
+  background-repeat: no-repeat;
+  background-position: 10px 60px;
+}
+
+.PSD .PSD-image .PSD-image-inside {
+  width: 100%;
+  height: 650px;
+  background-image: url(../images/macbook-inside.jpg);
+  background-repeat: no-repeat;
+  background-position: 130px 100px;
+}
 /*# sourceMappingURL=style.css.map */

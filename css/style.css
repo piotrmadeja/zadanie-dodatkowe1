@@ -225,6 +225,8 @@ body {
 
 .slogan button:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 /* End of main section */
@@ -233,6 +235,7 @@ body {
   width: 100%;
   height: 700px;
   margin: 0;
+  background-color: #f4f4f4;
 }
 
 .PSD .pink-line {
@@ -241,6 +244,7 @@ body {
   background-image: url(../images/line.jpg);
   background-repeat: no-repeat;
   background-position: 0 -38px;
+  background-color: #f4f4f4;
 }
 
 .PSD .PSD-text {
@@ -255,9 +259,7 @@ body {
       align-items: flex-start;
   -ms-flex-direction: column;
       flex-direction: column;
-  position: relative;
-  bottom: 10px;
-  left: 300px;
+  padding-left: 350px;
 }
 
 .PSD .PSD-text h1 {
@@ -274,6 +276,7 @@ body {
   height: 2px;
   background-color: #ed145b;
   margin-bottom: 20px;
+  margin: 20px 0 30px 0;
 }
 
 .PSD .PSD-text p {
@@ -296,6 +299,8 @@ body {
 
 .PSD .PSD-text i:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .PSD .PSD-image {
@@ -313,5 +318,96 @@ body {
   background-image: url(../images/macbook-inside.jpg);
   background-repeat: no-repeat;
   background-position: 130px 100px;
+}
+
+/*End of PSD section*/
+/*Start of services section*/
+.services {
+  width: 100%;
+  height: 650px;
+}
+
+.services .services-header {
+  height: 325px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+}
+
+.services .services-header h1 {
+  font-family: "Lato";
+  font-size: 38px;
+  font-style: italic;
+  letter-spacing: 0.95px;
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+.services .services-header .line {
+  width: 200px;
+  height: 2px;
+  background-color: #ed145b;
+  margin-bottom: 20px;
+  margin: 20px 0 30px 0;
+}
+
+.services .services-header p {
+  font-size: 15px;
+  font-family: "Lato";
+  letter-spacing: 0.38px;
+  color: #5a5a5a;
+  font-weight: 300;
+}
+
+.services .services-icons {
+  height: 325px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.services .services-icons .circle {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+}
+
+.services .services-icons .circle:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.services .services-icons .circle p {
+  position: absolute;
+  bottom: -40px;
+  left: -5px;
+  width: 145px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  color: #ed145b;
+}
+
+.services .services-icons .circle img {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

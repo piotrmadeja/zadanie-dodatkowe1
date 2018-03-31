@@ -269,6 +269,7 @@ body {
       border-radius: 50%;
       border: 2px solid black;
       position: relative;
+      bottom: 40px;
         &:hover {
           cursor: pointer;
           transform: scale(1.2);
@@ -296,4 +297,118 @@ body {
     }
   }
 }
+/*End of services section*/
+/*Start of carousel section*/
+.carousel {
+  background-color: #444444;
+  position: relative;
+  .carousel-text {
+    position: absolute;
+    width: 100%;
+    height: 501px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    .quote1 {
+      width: 65px;
+      height: 50px;
+      font-size: 158px;
+      font-family: 'Droid Serif';
+      font-weight: 700;
+      font-style: bold;
+      letter-spacing: 3.95px;
+      color: $pink;
+      background-color: transparent;
+      position: absolute;
+      top: 250px;
+      transform: rotate(180deg);
+    }
+    .quote2 {
+      width: 65px;
+      height: 50px;
+      font-size: 158px;
+      font-family: 'Droid Serif';
+      font-weight: 700;
+      font-style: bold;
+      letter-spacing: 3.95px;
+      color: $pink;
+      background-color: transparent;
+      position: absolute;
+      bottom: 250px;
+    }
+    p {
+      font-size: 25px;
+      letter-spacing: 0.63px;
+      font-family: $lato;
+      font-style: italic;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+}
+
+#carousel {
+	width: 100%;
+	height: 501px;
+	overflow: hidden;
+	margin: 0 auto;
+  padding: 0;
+  position: relative;
+  .arrowL {
+    width: 5%;
+    height: 501px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .arrow-left {
+      width: 0; 
+      height: 0; 
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent; 
+      border-right:22px solid #444444; 
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .arrowR {
+    width: 5%;
+    height: 501px;
+    position: absolute;
+    left: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .arrow-right {
+      width: 0; 
+      height: 0; 
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      border-left: 22px solid #444444;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+	  width:  3000px;
+	  margin: 0 auto;
+	  padding: 0;
+    li {
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
 

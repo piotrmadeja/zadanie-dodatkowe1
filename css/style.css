@@ -382,6 +382,7 @@ body {
   border-radius: 50%;
   border: 2px solid black;
   position: relative;
+  bottom: 40px;
 }
 
 .services .services-icons .circle:hover {
@@ -409,5 +410,139 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+/*End of services section*/
+/*Start of carousel section*/
+.carousel {
+  background-color: #444444;
+  position: relative;
+}
+
+.carousel .carousel-text {
+  position: absolute;
+  width: 100%;
+  height: 501px;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.carousel .carousel-text .quote1 {
+  width: 65px;
+  height: 50px;
+  font-size: 158px;
+  font-family: 'Droid Serif';
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 3.95px;
+  color: #ed145b;
+  background-color: transparent;
+  position: absolute;
+  top: 250px;
+  transform: rotate(180deg);
+}
+
+.carousel .carousel-text .quote2 {
+  width: 65px;
+  height: 50px;
+  font-size: 158px;
+  font-family: 'Droid Serif';
+  font-weight: 700;
+  font-style: bold;
+  letter-spacing: 3.95px;
+  color: #ed145b;
+  background-color: transparent;
+  position: absolute;
+  bottom: 250px;
+}
+
+.carousel .carousel-text p {
+  font-size: 25px;
+  letter-spacing: 0.63px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  color: #ffff;
+}
+
+#carousel {
+  width: 100%;
+  height: 501px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+#carousel .arrowL {
+  width: 5%;
+  height: 501px;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+#carousel .arrowL .arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-right: 22px solid #444444;
+}
+
+#carousel .arrowL .arrow-left:hover {
+  cursor: pointer;
+}
+
+#carousel .arrowR {
+  width: 5%;
+  height: 501px;
+  position: absolute;
+  left: 95%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+#carousel .arrowR .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 22px solid #444444;
+}
+
+#carousel .arrowR .arrow-right:hover {
+  cursor: pointer;
+}
+
+#carousel ul {
+  list-style-type: none;
+  width: 3000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#carousel ul li {
+  float: left;
+}
+
+#carousel ul li img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

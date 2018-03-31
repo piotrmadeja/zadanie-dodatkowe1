@@ -492,6 +492,7 @@ body {
       align-items: center;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  z-index: 2;
 }
 
 #carousel .arrowL .arrow-left {
@@ -517,6 +518,7 @@ body {
       align-items: center;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  z-index: 2;
 }
 
 #carousel .arrowR .arrow-right {

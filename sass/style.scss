@@ -364,6 +364,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 2;
     .arrow-left {
       width: 0; 
       height: 0; 
@@ -383,6 +384,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 2;
     .arrow-right {
       width: 0; 
       height: 0; 

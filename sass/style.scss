@@ -463,7 +463,189 @@ body {
   }
 }
 
+/*End of carousel section*/
+/*Start of Our-prices section*/
 
+.Our-Prices {
+  width: 100%;
+  height: 999px;
+  background-color: #f4f4f4;
+  .Our-Prices-text {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    h1 {
+      font-size: 38px;
+      letter-spacing: 0.95px;
+      font-family: $lato;
+      font-weight: 400;
+      color: #5a5a5a;
+      font-style: italic;
+      padding-top: 120px;
+    }
+    .line {
+      width: 200px;
+      height: 2px;
+      background-color: #ed145b;
+      margin-bottom: 20px;
+      margin: 20px 0 30px 0;
+    }
+    p {
+      font-family: $lato;
+      font-size: 15px;
+      font-weight: 300;
+      color: #5a5a5a;
+      letter-spacing: 0.38px;
+    }
+  }
+  .Buy-Now {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 275px 0 275px;
+    .packages {
+      width: 262px;
+      height: 460px;
+      background-color: #ffff;
+      .package-price {
+        background-color: #5a5a5a;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        .dolar {
+          font-size: 20px;
+          letter-spacing: 0.5px;
+          font-family: $lato;
+          font-style: bold;
+          font-weight: 700;
+          color: #f4f4f4;
+          position: absolute;
+          top: 59px;
+          left: 85px;
+        }
+        h1 {
+          font-family: $lato;
+          font-style: bold;
+          letter-spacing: 1.25px;
+          font-size: 50px;
+          font-weight: 700;
+          color: #f4f4f4;
+          margin-bottom: 50px;
+        }
+        .per-month {
+          font-family: $lato;
+          font-style: bold;
+          letter-spacing: 0.38px;
+          font-size: 15px;
+          font-weight: 700;
+          color: #f4f4f4;
+          position: absolute;
+          top: 87px;
+          left: 85px;
+        }
+      }
+      .package-price-pink {
+        background-color: $pink;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        .dolar {
+          font-size: 20px;
+          letter-spacing: 0.5px;
+          font-family: $lato;
+          font-style: bold;
+          font-weight: 700;
+          color: #f4f4f4;
+          position: absolute;
+          top: 59px;
+          left: 85px;
+        }
+        h1 {
+          font-family: $lato;
+          font-style: bold;
+          letter-spacing: 1.25px;
+          font-size: 50px;
+          font-weight: 700;
+          color: #f4f4f4;
+          margin-bottom: 50px;
+        }
+        .per-month {
+          font-family: $lato;
+          font-style: bold;
+          letter-spacing: 0.38px;
+          font-size: 15px;
+          font-weight: 700;
+          color: #f4f4f4;
+          position: absolute;
+          top: 87px;
+          left: 85px;
+        }
+      }
+      .package-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        span {
+          width: 200px;
+          height: 50px;
+          border-radius: 25px;
+          background-color: #f4f4f4;
+          position: absolute;
+          top: -28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: 700;
+          font-style: bold;
+          font-family: $lato;
+          color: #5a5a5a;
+        }
+        p {
+          font-family: $lato;
+          font-size: 15px;
+          font-weight: 300;
+          letter-spacing: 0.38px;
+          color: #5a5a5a;
+          &:first-of-type {
+            margin-top: 55px;
+          }
+          &:last-of-type {
+            margin-bottom: 40px;
+          }
+        }
+        button {
+          background-color: $pink;
+          width: 200px;
+          height: 50px;
+          border-radius: 25px;
+          border: none;
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 15px;
+            font-weight: 700;
+            font-style: bold;
+            font-family: $lato;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 [class*="col-"] {
   float: left;
   min-height: 1px;
@@ -837,7 +836,6 @@ body {
 }
 
 .adventages {
-  /* Style for "Prostokąt" */
   width: 100%;
   height: 601px;
   background-color: #ffffff;
@@ -878,6 +876,61 @@ body {
 .adventages div img {
   float: left;
   margin-right: 26px;
+}
+
+#join-us {
+  width: 100%;
+  height: 200px;
+  background-color: #ed145b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#join-us p {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 52px;
+  text-transform: uppercase;
+  font-family: "Lato Light";
+  letter-spacing: 0.95px;
+}
+#join-us .mache-bold {
+  font-family: Lato;
+  font-weight: 700;
+  letter-spacing: 0.95px;
+}
+#join-us a {
+  color: #ed145b;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  letter-spacing: 0.38px;
+  text-decoration: none;
+  padding: 41px;
+}
+#join-us a button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+#join-us a button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 [class*="col-"] {
   float: left;
   min-height: 1px;
@@ -100,7 +101,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -117,13 +119,14 @@ body {
   position: fixed;
   width: 50px;
   height: 100%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 11;
 }
-
 .fixed .point {
   width: 20px;
   height: 20px;
@@ -132,11 +135,9 @@ body {
   position: relative;
   z-index: 1;
 }
-
 .fixed .point:hover {
   cursor: pointer;
 }
-
 .fixed .go-back {
   position: absolute;
   left: -35px;
@@ -147,27 +148,28 @@ body {
   font-family: "Lato";
   letter-spacing: 1.15px;
   background-color: transparent;
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   background-color: #444444;
   border: 1px solid #ed145b;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0.0;
   z-index: 10;
 }
-
 .fixed .go-back:hover {
   opacity: 1;
+  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .fixed .go-back a {
   text-decoration: none;
   color: #ffff;
 }
-
 .fixed .go-back .go-back-arrow {
   width: 0;
   height: 0;
@@ -185,37 +187,37 @@ body {
 }
 
 .menu {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
 }
-
 .menu .nav-buttons {
   width: 70%;
   color: #ffff;
   font-size: 18px;
   font-family: "Lato";
   letter-spacing: 0.4px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .menu .nav-buttons ul li {
   display: inline-block;
   padding: 0 10px;
-  -ms-flex-align: end;
-      align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-
 .menu .nav-buttons ul li a {
   text-decoration: none;
   color: #ffff;
 }
-
 .menu .logo {
   width: 30%;
   padding: 10px 0;
@@ -223,6 +225,7 @@ body {
   font-size: 25px;
   font-family: "Lato";
   letter-spacing: 1.15px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -232,16 +235,20 @@ body {
 .slogan {
   height: calc(800px - 101px);
   margin: 0 auto;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 .slogan h1 {
   text-transform: uppercase;
   color: #ffff;
@@ -254,7 +261,6 @@ body {
   position: relative;
   bottom: 50px;
 }
-
 .slogan .line {
   width: 200px;
   height: 2px;
@@ -262,7 +268,6 @@ body {
   position: relative;
   bottom: 50px;
 }
-
 .slogan p {
   padding-top: 20px;
   color: #ffff;
@@ -272,7 +277,6 @@ body {
   position: relative;
   bottom: 50px;
 }
-
 .slogan button {
   width: 200px;
   height: 50px;
@@ -286,10 +290,11 @@ body {
   bottom: 50px;
   margin-top: 66px;
 }
-
 .slogan button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -301,7 +306,6 @@ body {
   margin: 0;
   background-color: #f4f4f4;
 }
-
 .PSD .pink-line {
   height: 50px;
   width: 100%;
@@ -310,22 +314,25 @@ body {
   background-position: 0 -38px;
   background-color: #f4f4f4;
 }
-
 .PSD .PSD-text {
   height: 650px;
   width: 60%;
   float: left;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 350px;
 }
-
 .PSD .PSD-text h1 {
   font-size: 45px;
   font-family: "Lato";
@@ -334,7 +341,6 @@ body {
   letter-spacing: 0.95px;
   text-align: left;
 }
-
 .PSD .PSD-text .line {
   width: 200px;
   height: 2px;
@@ -342,13 +348,11 @@ body {
   margin-bottom: 20px;
   margin: 20px 0 30px 0;
 }
-
 .PSD .PSD-text p {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.38px;
 }
-
 .PSD .PSD-text h2 {
   font-size: 25px;
   font-weight: 400;
@@ -356,17 +360,16 @@ body {
   color: #ed145b;
   padding-top: 20px;
 }
-
 .PSD .PSD-text i {
   font-size: 30px;
 }
-
 .PSD .PSD-text i:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .PSD .PSD-image {
   height: 650px;
   width: 40%;
@@ -375,7 +378,6 @@ body {
   background-repeat: no-repeat;
   background-position: 10px 60px;
 }
-
 .PSD .PSD-image .PSD-image-inside {
   width: 100%;
   height: 650px;
@@ -390,20 +392,23 @@ body {
   width: 100%;
   height: 650px;
 }
-
 .services .services-header {
   height: 325px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
-
 .services .services-header h1 {
   font-family: "Lato";
   font-size: 38px;
@@ -412,7 +417,6 @@ body {
   color: #5a5a5a;
   font-weight: 400;
 }
-
 .services .services-header .line {
   width: 200px;
   height: 2px;
@@ -420,7 +424,6 @@ body {
   margin-bottom: 20px;
   margin: 20px 0 30px 0;
 }
-
 .services .services-header p {
   font-size: 15px;
   font-family: "Lato";
@@ -428,18 +431,18 @@ body {
   color: #5a5a5a;
   font-weight: 300;
 }
-
 .services .services-icons {
   height: 325px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
 }
-
 .services .services-icons .circle {
   height: 140px;
   width: 140px;
@@ -448,13 +451,13 @@ body {
   position: relative;
   bottom: 40px;
 }
-
 .services .services-icons .circle:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .services .services-icons .circle p {
   position: absolute;
   bottom: -40px;
@@ -465,7 +468,6 @@ body {
   letter-spacing: 0.38px;
   color: #ed145b;
 }
-
 .services .services-icons .circle img {
   overflow: auto;
   margin: auto;
@@ -482,23 +484,26 @@ body {
   background-color: #444444;
   position: relative;
 }
-
 .carousel .carousel-text {
   position: absolute;
   width: 100%;
   height: 501px;
   z-index: 1;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 .carousel .carousel-text .quote1 {
   width: 65px;
   height: 50px;
@@ -511,9 +516,9 @@ body {
   background-color: transparent;
   position: absolute;
   top: 250px;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
-
 .carousel .carousel-text .quote2 {
   width: 65px;
   height: 50px;
@@ -527,7 +532,6 @@ body {
   position: absolute;
   bottom: 250px;
 }
-
 .carousel .carousel-text p {
   font-size: 25px;
   letter-spacing: 0.63px;
@@ -545,20 +549,21 @@ body {
   padding: 0;
   position: relative;
 }
-
 #carousel .arrowL {
   width: 5%;
   height: 501px;
   position: absolute;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   z-index: 2;
 }
-
 #carousel .arrowL .arrow-left {
   width: 0;
   height: 0;
@@ -566,25 +571,25 @@ body {
   border-bottom: 22px solid transparent;
   border-right: 22px solid #444444;
 }
-
 #carousel .arrowL .arrow-left:hover {
   cursor: pointer;
 }
-
 #carousel .arrowR {
   width: 5%;
   height: 501px;
   position: absolute;
   left: 95%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   z-index: 2;
 }
-
 #carousel .arrowR .arrow-right {
   width: 0;
   height: 0;
@@ -592,22 +597,18 @@ body {
   border-bottom: 22px solid transparent;
   border-left: 22px solid #444444;
 }
-
 #carousel .arrowR .arrow-right:hover {
   cursor: pointer;
 }
-
 #carousel ul {
   list-style-type: none;
   width: 2000px;
   margin: 0 auto;
   padding: 0;
 }
-
 #carousel ul li {
   float: left;
 }
-
 #carousel ul li img {
   width: 100%;
 }
@@ -619,20 +620,23 @@ body {
   height: 999px;
   background-color: #f4f4f4;
 }
-
 .Our-Prices .Our-Prices-text {
   height: 35%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
 }
-
 .Our-Prices .Our-Prices-text h1 {
   font-size: 38px;
   letter-spacing: 0.95px;
@@ -642,7 +646,6 @@ body {
   font-style: italic;
   padding-top: 120px;
 }
-
 .Our-Prices .Our-Prices-text .line {
   width: 200px;
   height: 2px;
@@ -650,7 +653,6 @@ body {
   margin-bottom: 20px;
   margin: 20px 0 30px 0;
 }
-
 .Our-Prices .Our-Prices-text p {
   font-family: "Lato";
   font-size: 15px;
@@ -658,38 +660,40 @@ body {
   color: #5a5a5a;
   letter-spacing: 0.38px;
 }
-
 .Our-Prices .Buy-Now {
   height: 65%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 275px 0 275px;
 }
-
 .Our-Prices .Buy-Now .packages {
   width: 262px;
   height: 460px;
   background-color: #ffff;
 }
-
 .Our-Prices .Buy-Now .packages .package-price {
   background-color: #5a5a5a;
   width: 100%;
   height: 160px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   position: relative;
 }
-
 .Our-Prices .Buy-Now .packages .package-price .dolar {
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -701,7 +705,6 @@ body {
   top: 59px;
   left: 85px;
 }
-
 .Our-Prices .Buy-Now .packages .package-price h1 {
   font-family: "Lato";
   font-style: bold;
@@ -711,7 +714,6 @@ body {
   color: #f4f4f4;
   margin-bottom: 50px;
 }
-
 .Our-Prices .Buy-Now .packages .package-price .per-month {
   font-family: "Lato";
   font-style: bold;
@@ -723,21 +725,22 @@ body {
   top: 87px;
   left: 85px;
 }
-
 .Our-Prices .Buy-Now .packages .package-price-pink {
   background-color: #ed145b;
   width: 100%;
   height: 160px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   position: relative;
 }
-
 .Our-Prices .Buy-Now .packages .package-price-pink .dolar {
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -749,7 +752,6 @@ body {
   top: 59px;
   left: 85px;
 }
-
 .Our-Prices .Buy-Now .packages .package-price-pink h1 {
   font-family: "Lato";
   font-style: bold;
@@ -759,7 +761,6 @@ body {
   color: #f4f4f4;
   margin-bottom: 50px;
 }
-
 .Our-Prices .Buy-Now .packages .package-price-pink .per-month {
   font-family: "Lato";
   font-style: bold;
@@ -771,17 +772,19 @@ body {
   top: 87px;
   left: 85px;
 }
-
 .Our-Prices .Buy-Now .packages .package-type {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
-
 .Our-Prices .Buy-Now .packages .package-type span {
   width: 200px;
   height: 50px;
@@ -789,19 +792,21 @@ body {
   background-color: #f4f4f4;
   position: absolute;
   top: -28px;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 15px;
   font-weight: 700;
   font-style: bold;
   font-family: "Lato";
   color: #5a5a5a;
 }
-
 .Our-Prices .Buy-Now .packages .package-type p {
   font-family: "Lato";
   font-size: 15px;
@@ -809,15 +814,12 @@ body {
   letter-spacing: 0.38px;
   color: #5a5a5a;
 }
-
 .Our-Prices .Buy-Now .packages .package-type p:first-of-type {
   margin-top: 55px;
 }
-
 .Our-Prices .Buy-Now .packages .package-type p:last-of-type {
   margin-bottom: 40px;
 }
-
 .Our-Prices .Buy-Now .packages .package-type button {
   background-color: #ed145b;
   width: 200px;
@@ -825,7 +827,6 @@ body {
   border-radius: 25px;
   border: none;
 }
-
 .Our-Prices .Buy-Now .packages .package-type button a {
   text-decoration: none;
   color: #ffff;
@@ -834,4 +835,49 @@ body {
   font-style: bold;
   font-family: "Lato";
 }
+
+.adventages {
+  /* Style for "Prostokąt" */
+  width: 100%;
+  height: 601px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 150px;
+}
+.adventages div {
+  width: 346px;
+  height: 115px;
+  margin: 40px;
+}
+.adventages div h1 {
+  color: #ed145b;
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.38px;
+  margin: 0;
+}
+.adventages div p {
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.38px;
+  margin-left: 83px;
+}
+.adventages div img {
+  float: left;
+  margin-right: 26px;
+}
+
 /*# sourceMappingURL=style.css.map */
